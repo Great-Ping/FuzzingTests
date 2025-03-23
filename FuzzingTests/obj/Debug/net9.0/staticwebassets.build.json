@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "C6NQrx/aZE8TlbYMBAVsTUP47gZBLJwz75QdMLFUW80=",
+  "Source": "FuzzingTests",
+  "BasePath": "_content/FuzzingTests",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

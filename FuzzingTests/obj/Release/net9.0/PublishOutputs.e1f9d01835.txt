@@ -1,0 +1,10 @@
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\FuzzingTests.exe
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\appsettings.json
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\FuzzingTests.dll
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\FuzzingTests.deps.json
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\FuzzingTests.runtimeconfig.json
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\FuzzingTests.pdb
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\AltCover.Monitor.dll
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\da180\RiderProjects\FuzzingTests\FuzzingTests\bin\Release\net9.0\publish\Microsoft.OpenApi.dll
