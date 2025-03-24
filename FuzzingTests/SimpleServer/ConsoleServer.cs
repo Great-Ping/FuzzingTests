@@ -75,7 +75,7 @@ public partial class ConsoleServer(string input): IServer
         
         requestFuture.Method = method;
         requestFuture.Path = path;
-        requestFuture.PathBase = path;
+        requestFuture.PathBase = String.Empty;
         
         if (!string.IsNullOrEmpty(body))
         {

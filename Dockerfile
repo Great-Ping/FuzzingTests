@@ -26,5 +26,6 @@ ENV PATH="${PATH}:/root/.dotnet/tools"
 
 WORKDIR /Source/
 COPY . .
+RUN dotnet restore
 RUN echo "pwsh /root/sharpfuzz/scripts/fuzz.ps1 /Source/FuzzingTests/FuzzingTests.csproj -i /Source/TestCases" > run.sh && \
-    chmod +x run.shcd 
+    chmod +x run.sh
