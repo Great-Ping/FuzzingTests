@@ -10,6 +10,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        // string str = Console.ReadLine();
         Fuzzer.OutOfProcess.Run((string str) =>
         {
             string method = "POST /";
@@ -18,7 +19,7 @@ public class Program
                 method = "GET /";
             }
 
-            StartServer(args, method+str);
+            StartServer(args, method + str);
         });
     }
 
@@ -52,42 +53,14 @@ public class Program
         app.Use(async (context, next) =>
         {
             // await Task.Yield();
-            if (context.Request.Method == "GET")
-            {
-                Console.WriteLine("GET");
-            }
-            else
-            {
-                Console.WriteLine("Invalid Method");
-            }
+            Console.WriteLine(context.Request.Method == "GET" ? "GET" : "Invalid Method");
+            Console.WriteLine((context.Request.Path.Value?.Length ?? 0) % 2 == 0 ? "Test1" : "Test2");
+            Console.WriteLine((context.Request.Method.Length) % 2 == 0 ? "Test3" : "Test4");
 
-            if ((context.Request.Path.Value?.Length ?? 0) % 2 == 0)
-            {
-                Console.WriteLine("Test1");
-            }
-            else
-            {
-                Console.WriteLine("Test2");
-            }
-            
-            if ((context.Request.Method.Length) % 2 == 0)
-            {
-                Console.WriteLine("Test3");
-            }
-            else
-            {
-                Console.WriteLine("Test4");
-            }
-
-            if (Random.Shared.Next(10) == 2)
-            {
-                throw new Exception("TestException");
-            }
-            
             if (Random.Shared.Next(10) == 2)
             {
                 await Task.Yield();
-                throw new Exception("TestException");
+                Console.WriteLine("Yield");
             }
 
             try
@@ -98,7 +71,6 @@ public class Program
             {
                 await app.StopAsync();
             }
-
         });
         
         app.MapGet("/weatherforecast", () =>
